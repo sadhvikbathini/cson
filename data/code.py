@@ -35,7 +35,7 @@ data['To'] = Tomail
 data.attach(MIMEText(time))
 
 ehtml = """\
-<html><head><center><h2> Alert ⚠️ </h2></center></head>
+<html><head><center><h2> Captured Image </h2></center></head>
 <hr>
 <body>
 <br>
