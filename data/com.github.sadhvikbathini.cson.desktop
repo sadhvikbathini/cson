@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=CSOn
+GenericName=CSOn app
+Comment=Captures a photo at login with webcam and sends it through mail
+Categories=Utility;
+Exec=com.github.sadhvikbathini.cson
+Icon=com.github.sadhvikbathini.cson
+Terminal=false
+Type=Application
+Keywords=webcam;login;mail;cson;capturephoto;webcam;

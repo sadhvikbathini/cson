@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+    <schema path="/com/github/sadhvikbathini/cson/" id="com.github.sadhvikbathini.cson">
+        <key name="pos-x" type="i">
+            <default>470</default>
+        </key>
+        <key name="pos-y" type="i">
+            <default>240</default>
+        </key>
+        <key name="switch" type="b">
+            <default>true</default>
+        </key>
+        <key name="saveswitch" type="b">
+            <default>true</default>
+        </key>
+        <key name="switch1" type="b">
+            <default>true</default>
+        </key>
+        <key name="saveswitch1" type="b">
+            <default>true</default>
+        </key>
+        <key name="frommail" type="s">
+            <default>"from@gmail.com"</default>
+        </key>
+        <key name="pass" type="s">
+            <default>"Enter Gmail 16-digit app password"</default>
+        </key>
+        <key name="tomail" type="s">
+            <default>"to@gmail.com"</default>
+        </key>
+        <key name="error" type="s">
+            <default>""</default>
+        </key>
+    </schema>
+</schemalist>

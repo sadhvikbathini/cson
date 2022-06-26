@@ -1,0 +1,23 @@
+{
+  "app-id": "com.github.sadhvikbathini.cson",
+  "runtime": "io.elementary.Platform",
+  "runtime-version": "6",
+  "sdk": "io.elementary.Sdk",
+  "command": "com.github.sadhvikbathini.cson",
+  "finish-args":[
+    "--share=ipc",
+    "--socket=fallback-x11",
+    "--socket=wayland",
+    "--filesystem=home:create",
+  ],
+  "modules":[
+    {
+    "name": "cson",
+    "buildsystem": "meson",
+    "sources":[{
+      "type": "dir",
+      "path": ".",
+      }]
+    }
+  ]
+}
