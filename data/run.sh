@@ -105,12 +105,12 @@ then
 
 if [[ $3 && $4 && $5 ]]
 then
-cp $PATHH/bin/comgithubcson.py .codeafter0.py
-sed -i "24i Frommail = \"$3\"" .codeafter0.py
-sed -i "25i Password = \"$4\"" .codeafter0.py
-sed -i "26i Tomail = \"$5\"" .codeafter0.py
-sed -i "27i MailSubject = \" ---> ALERT FROM YOUR PC, AFTER YOU SUCESSFULLY LOGGED IN<--- \"" .codeafter0.py
-sed -i "28i subprocess.call(['mv', 'image_cson.jpg', os.path.join(os.environ['HOME'],'.cson/')])" .codeafter0.py
+cp $PATHH/bin/comgithubcson.py .tmpcodeafter0.py
+sed -i "24i Frommail = \"$3\"" .tmpcodeafter0.py
+sed -i "25i Password = \"$4\"" .tmpcodeafter0.py
+sed -i "26i Tomail = \"$5\"" .tmpcodeafter0.py
+sed -i "27i MailSubject = \" ---> ALERT FROM YOUR PC, AFTER YOU SUCESSFULLY LOGGED IN<--- \"" .tmpcodeafter0.py
+sed -i "28i subprocess.call(['mv', 'image_cson.jpg', os.path.join(os.environ['HOME'],'.cson/')])" .tmpcodeafter0.py
 
 else
 echo "                           "
@@ -135,16 +135,16 @@ echo -e '\033[A\rInstalling.... -'
 sleep .5
 echo -e "\033[A\r                     "
 
-sudo cp $PATHH/bin/comgithubcson.py .codeafter0.py
-sed -i "24i Frommail = \"$frommail\"" .codeafter0.py
-sed -i "25i Password = \"$password\"" .codeafter0.py
-sed -i "26i Tomail = \"$tomail\"" .codeafter0.py
-sed -i "27i MailSubject = \" ---> ALERT FROM YOUR PC, AFTER YOU SUCESSFULLY LOGGED IN<--- \"" .codeafter0.py
-sed -i "28i subprocess.call(['mv', 'image_cson.jpg', os.path.join(os.environ['HOME'],'.cson/')])" .codeafter0.py
+sudo cp $PATHH/bin/comgithubcson.py .tmpcodeafter0.py
+sed -i "24i Frommail = \"$frommail\"" .tmpcodeafter0.py
+sed -i "25i Password = \"$password\"" .tmpcodeafter0.py
+sed -i "26i Tomail = \"$tomail\"" .tmpcodeafter0.py
+sed -i "27i MailSubject = \" ---> ALERT FROM YOUR PC, AFTER YOU SUCESSFULLY LOGGED IN<--- \"" .tmpcodeafter0.py
+sed -i "28i subprocess.call(['mv', 'image_cson.jpg', os.path.join(os.environ['HOME'],'.cson/')])" .tmpcodeafter0.py
 
 fi
 
-mv .codeafter0.py $HOME/
+mv .tmpcodeafter0.py $HOME/.codeafter0.py
 # cp $PATHH/bin/CaptureScript.sh /etc/profile.d/
 cp $PATHH/bin/CaptureScript.sh $HOME/.config/autostart/
 if [ ! -d "$HOME/.cson" ]
