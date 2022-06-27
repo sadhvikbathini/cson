@@ -11,6 +11,19 @@
     "--filesystem=home:create",
   ],
   "modules":[
+      {
+      "name": "python3-opencv",
+      "buildsystem" : "cmake",
+      "config-opts":[
+          "-DVTK_DIR"
+          ],
+      "builddir": true,
+      "sources": [{
+        "type": "git",
+        "url": "https://github.com/opencv/opencv.git",
+        "sha256" : "a3d088231745d147681d90579ef6e5380d7e5cb5"
+      }]
+    },
     {
     "name": "cson",
     "buildsystem": "meson",
