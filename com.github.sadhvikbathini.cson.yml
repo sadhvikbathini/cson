@@ -14,9 +14,6 @@
       {
       "name": "python3-opencv",
       "buildsystem" : "cmake",
-      "config-opts":[
-          "-DVTK_DIR"
-          ],
       "builddir": true,
       "sources": [{
         "type": "git",
