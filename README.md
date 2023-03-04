@@ -2,7 +2,7 @@
 Capture Script
 
 Captures a photo with webcam and sends it through mail , just after you open your pc
-
+![alt text](https://github.com/sadhvikbathini/cson/blob/main/data/screenshots/cson_gmail.png?raw=true)
 ### Building
 
 Make sure you have
